@@ -9,7 +9,7 @@ const Technologies = () =>  (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I'm a regular self-taught programmer who learn from the basic. One step at a time.
+      I'm a regular self-taught front-end developer who learn from the basic. One step at a time.
     </SectionText>
     <List>
       <ListItem>
@@ -18,11 +18,11 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js and Next.js
+            HTML, CSS, React.js <br /> and Next.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
-      <ListItem>
+      {/* <ListItem>
         <DiFirebase size='3rem' />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
@@ -31,8 +31,8 @@ const Technologies = () =>  (
             Node.js and Databases
           </ListParagraph>
         </ListContainer>
-      </ListItem>
-      {/* <ListItem>
+      </ListItem> */}
+      <ListItem>
         <DiZend size='3rem' />
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
@@ -41,8 +41,9 @@ const Technologies = () =>  (
             Figma
           </ListParagraph>
         </ListContainer>
-      </ListItem> */}
+      </ListItem>
     </List>
+    <SectionDivider />
   </Section>
 );
 
