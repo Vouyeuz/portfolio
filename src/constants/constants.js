@@ -31,8 +31,8 @@ export const projects = [
     description: "This is under-construction. When finished this website supposed to be a full Realtime Chat Website for multiple users.",
     image: '/images/react-3.png',
     tags: ['React', 'Node', 'Socket.io'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    source: null,
+    visit: null,
     id: 2, //aslinya urutan ke-3
   },
 ];

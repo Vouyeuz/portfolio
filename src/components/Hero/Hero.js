@@ -15,10 +15,10 @@ const Hero = () => (
         Hi, Welcome To <br />
         My Portfolio!
       </SectionTitle>
-      <SectionText></SectionText>
+      <SectionText>Let me show you our purpose in life</SectionText>
       <Button
         onClick={() =>
-          (window?.open("https://www.youtube.com/user/khalidbasalamah"))
+          (window?.open("https://www.youtube.com/watch?v=VdUhu0SXw60"))
         }
       >
         Learn More
