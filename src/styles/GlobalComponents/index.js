@@ -78,9 +78,10 @@ export const SectionText = styled.p`
 
 export const SectionDivider = styled.div`
 
-  width: 64px;
+  width: 100px;
   height: 6px;
   border-radius: 10px;
+  margin-bottom: 50px;
   background-color: #fff;
   background: ${(props) => props.colorAlt ? 
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
