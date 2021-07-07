@@ -10,7 +10,7 @@ const Technologies = () =>  (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I'm a regular self-taught front-end developer who learn from the basic. Focus on one path.
+      I'm a regular self-taught front-end developer who learn from the basic and only focus on one path.
     </SectionText>
     <List>
       <ListItem>

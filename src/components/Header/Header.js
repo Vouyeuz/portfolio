@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+import { DiJsBadge } from "react-icons/di";
 
 import {
   Container,
@@ -17,8 +17,9 @@ const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "#fff" }}>
-          <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+        <a style={{ display: "flex", alignItems: "center", color: "#fff", fontWeight: "bolder" }}>
+          <DiJsBadge size="2.3rem" />
+          <Span>Portfolio</Span>
         </a>
       </Link>
     </Div1>
@@ -51,7 +52,10 @@ const Header = () => (
       <SocialIcons target="_blank" href="https://www.instagram.com/dirgtd/">
         <AiFillInstagram size="3rem" />
       </SocialIcons>
-      <SocialIcons target="_blank" href="https://www.linkedin.com/in/fahrizal-indi-dirgantara-a9b398b4/">
+      <SocialIcons
+        target="_blank"
+        href="https://www.linkedin.com/in/fahrizal-indi-dirgantara-a9b398b4/"
+      >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
     </Div3>
