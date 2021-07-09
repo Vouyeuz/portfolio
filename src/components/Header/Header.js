@@ -4,11 +4,13 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { DiJsBadge } from "react-icons/di";
 
 import {
+  ContactDropDown,
   Container,
   Div1,
   Div2,
   Div3,
   NavLink,
+  NavProductsIcon,
   SocialIcons,
   Span,
 } from "./HeaderStyles";
@@ -17,7 +19,14 @@ const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "#fff", fontWeight: "bolder" }}>
+        <a
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "#fff",
+            fontWeight: "bolder",
+          }}
+        >
           <DiJsBadge size="2.3rem" />
           <Span>Portfolio</Span>
         </a>
