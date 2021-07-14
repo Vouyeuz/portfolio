@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillProfile, AiOutlineMenu } from "react-icons/ai";
 import { DiJsBadge } from "react-icons/di";
 
 import {
@@ -68,6 +68,7 @@ const Header = () => (
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
     </Div3>
+    <AiOutlineMenu size="2.5rem" color="red" />
   </Container>
 );
 
