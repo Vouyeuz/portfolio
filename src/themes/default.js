@@ -1,8 +1,10 @@
 export default {
   // Temp fonts
   fonts: {
-    title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif"
+    // title: "Space Grotesk, sans-serif",
+    title: 'Patrick Hand, cursive',
+    // main: "Space Grotesk, sans-serif",
+    main: 'Patrick Hand, cursive'
   },
   // Colors for layout
   colors: {
