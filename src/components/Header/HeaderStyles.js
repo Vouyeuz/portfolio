@@ -55,6 +55,7 @@ export const Div3 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
+    visibility: hidden;
   }
 `;
 
@@ -137,3 +138,12 @@ export const SocialIcons = styled.a`
   }
 `;
 
+export const ToggleButton = styled.a`
+visibility: hidden;
+
+@media ${(props) => props.theme.breakpoints.sm} {
+    visibility: visible;
+    transition: 0.3s ease;
+    color: grey;
+  }
+`;
