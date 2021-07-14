@@ -8,7 +8,7 @@ export const Layout = ({children}) => {
   return (
     <Container>
      <Header/>
-     <fontfamily>{children}</fontfamily> 
+     <main>{children}</main> 
      <Footer/>
     </Container>
   )
