@@ -40,11 +40,22 @@ export const Div2 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
     background: linear-gradient(
-      0deg, 
-      hsl(270, 100%, 50%), 
-      hsl(180, 70%, 40%)
+      270deg,
+      hsl(180, 70%, 38%),
+      hsl(270, 100%, 20%)
     );
-    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 100%;
+    position: fixed;
+    top: 0;
+    left: ${({ isOpen }) => (isOpen ? "0" : "-180%")};
+    flex-direction: column;
+    align-items: center;
+    padding: 170px;
+    transition: .3s ease;
+    onScroll: null;
   }
 `;
 export const Div3 = styled.div`
@@ -54,8 +65,7 @@ export const Div3 = styled.div`
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
-    visibility: hidden;
+    grid-area: 1 / 4 / 2 / 4;
   }
 `;
 
@@ -136,14 +146,32 @@ export const SocialIcons = styled.a`
     transform: scale(1.2);
     cursor: pointer;
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    
+    }
 `;
 
-export const ToggleButton = styled.a`
-visibility: hidden;
+export const ToggleMenu = styled.a`
+  visibility: hidden;
 
-@media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.sm} {
     visibility: visible;
-    transition: 0.3s ease;
-    color: grey;
+    color: white;
+    position: absolute;
+    top: 29px;
+    right: 10px;
+  }
+`;
+
+export const CloseMenu = styled.a`
+  visibility: hidden;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    visibility: visible;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 `;

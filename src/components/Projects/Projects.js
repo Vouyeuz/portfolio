@@ -33,7 +33,7 @@ const Projects = () => (
               <HeaderThree title>{title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo style={{paddingBottom: "11px"}}>{description}</CardInfo>
+            <CardInfo style={{padding: "15px"}}>{description}</CardInfo>
             <div>
               <TitleContent>Stack</TitleContent>
               <TagList>
