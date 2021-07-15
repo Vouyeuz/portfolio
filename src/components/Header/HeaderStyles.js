@@ -55,7 +55,7 @@ export const Div2 = styled.div`
     align-items: center;
     padding: 170px;
     transition: .3s ease;
-    onScroll: null;
+    overflow: hidden;
   }
 `;
 export const Div3 = styled.div`
