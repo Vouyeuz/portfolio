@@ -16,6 +16,16 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 50px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+    position: fixed;
+    height: 60px;
+    padding-top: 6px;
+    overflow: hidden;
+    z-index: 10;
+    background: linear-gradient(
+      360deg,
+      hsl(180, 70%, 0%),
+      hsl(270, 100%, 18%)
+    );
   }
 `;
 
@@ -54,8 +64,7 @@ export const Div2 = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 170px;
-    transition: .3s ease;
-    onScroll: null;
+    transition: .5s ease;
   }
 `;
 export const Div3 = styled.div`
@@ -159,7 +168,7 @@ export const ToggleMenu = styled.a`
     visibility: visible;
     color: white;
     position: absolute;
-    top: 29px;
+    top: 15px;
     right: 10px;
   }
 `;

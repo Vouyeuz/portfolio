@@ -21,6 +21,7 @@ export const Section = styled.section`
 
     width: calc(100vw - 32px);
     flex-direction: column;
+    margin-top: 40px;
   }
 `
 
