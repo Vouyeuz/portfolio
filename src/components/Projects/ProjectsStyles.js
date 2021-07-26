@@ -52,7 +52,7 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #d0bb57;
+  background: hsl(270, 90%, 55%);
 `;
 
 export const Intro = styled.div`

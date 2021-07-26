@@ -15,16 +15,16 @@ const Hero = () => (
         Hi, Welcome To
         My Portfolio!
       </SectionTitle>
-      <SectionText>Let me show you our purpose in life.</SectionText>
-      {/* <SectionText>Let me lend you a hand beautify 
-       your website.</SectionText> */}
-      <Button
+      {/* <SectionText>Let me show you our purpose in life.</SectionText> */}
+      <SectionText>Let me lend you a hand to beautify 
+       your website.</SectionText>
+      {/* <Button
         onClick={() =>
           (window?.open("https://www.youtube.com/watch?v=VdUhu0SXw60"))
         }
       >
         Learn More
-      </Button>
+      </Button> */}
     </LeftSection>
   </Section>
 );
