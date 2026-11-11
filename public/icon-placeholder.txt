@@ -1,0 +1,1 @@
+Put static assets (resume PDF, images) in this folder. Files here are served from "/".

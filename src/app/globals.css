@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  --bg: 238 241 246;
+  --surface: 255 255 255;
+  --fg: 15 27 51;
+  --muted: 82 94 118;
+  --line: 208 215 229;
+  --accent: 39 66 232;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 14 20 36;
+    --surface: 21 29 50;
+    --fg: 232 236 245;
+    --muted: 160 170 192;
+    --line: 40 51 76;
+    --accent: 140 158 255;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-bg font-serif text-[17px] leading-relaxed text-fg antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.25);
+}
+
+@keyframes ping-soft {
+  0% { box-shadow: 0 0 0 0 rgb(var(--accent) / 0.55); }
+  100% { box-shadow: 0 0 0 10px rgb(var(--accent) / 0); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .live-dot { animation: ping-soft 2s ease-out infinite; }
+  .hero-rise > * { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  .hero-rise > *:nth-child(2) { animation-delay: 0.08s; }
+  .hero-rise > *:nth-child(3) { animation-delay: 0.16s; }
+  .hero-rise > *:nth-child(4) { animation-delay: 0.24s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
